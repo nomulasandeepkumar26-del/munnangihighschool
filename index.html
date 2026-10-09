@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Munnangi High School | Learn • Grow • Succeed</title>
+<style>
+:root{--navy:#073b78;--blue:#0758a8;--gold:#ffc928;--ink:#17233c;--muted:#5b6880;--paper:#f5f8fd;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{color:inherit}.topbar{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #001b3d33}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:20px;padding:12px 20px}.brand{display:flex;align-items:center;gap:12px;margin-right:auto;min-width:230px}.logo{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:white;color:var(--navy);font-size:27px;border:3px solid var(--gold)}.brand strong{display:block;font-size:20px;line-height:1.1;letter-spacing:.4px}.brand small{color:#d9e8ff}.navlinks{display:flex;align-items:center;gap:17px}.navlinks a{font-size:13px;text-decoration:none;font-weight:700;color:white}.navlinks a:hover{color:var(--gold)}.apply,.btn{border:0;border-radius:30px;background:var(--gold);color:#101b2e;padding:12px 19px;font-weight:800;text-decoration:none;cursor:pointer;display:inline-block}.menu-toggle{display:none;background:transparent;color:white;border:1px solid #ffffff77;border-radius:8px;padding:8px 12px;font-size:20px}
+.hero{min-height:390px;background:linear-gradient(90deg,#03294de8 0%,#063b73c9 43%,#063b7340 100%),linear-gradient(135deg,#0b5b9f,#79b7db 55%,#d4e6ed);color:white;display:flex;align-items:center}.hero-inner{max-width:1200px;width:100%;margin:auto;padding:55px 25px}.eyebrow{color:var(--gold);font-weight:800;font-size:20px}.hero h1{font-size:clamp(34px,5vw,60px);line-height:1.05;margin:8px 0 14px;max-width:700px}.hero p{font-size:18px;max-width:550px;color:#f0f6ff}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn.outline{background:transparent;color:white;border:2px solid white}.quicklinks{max-width:1200px;margin:-24px auto 30px;padding:0 20px;position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.quick{padding:18px 12px;background:white;border-radius:14px;box-shadow:0 8px 25px #0c3b7114;text-align:center;text-decoration:none;border:1px solid #e2eaf5}.quick .emoji{font-size:29px;display:block}.quick b{display:block;color:var(--navy);font-size:14px}.quick small{color:var(--muted);font-size:11px}
+main{max-width:1200px;margin:auto;padding:0 20px 40px}.section{margin:38px 0;scroll-margin-top:100px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:18px}.section h2{margin:0;color:var(--navy);font-size:28px}.section-heading p{margin:4px 0 0;color:var(--muted)}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel,.card{background:white;border:1px solid #e2eaf5;border-radius:16px;padding:22px;box-shadow:0 5px 20px #153b6810}.panel h3,.card h3{margin-top:0;color:var(--navy)}.vision-box{border-left:5px solid var(--blue);padding:10px 15px;background:#eef6ff;border-radius:8px;margin:12px 0}.mission-box{border-left:5px solid #20a46b;padding:10px 15px;background:#effbf5;border-radius:8px;margin:12px 0}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.tile{background:white;border:1px solid #e2eaf5;border-radius:14px;overflow:hidden}.tile img,.tile video{display:block;width:100%;max-height:220px;object-fit:cover;background:#e8eef6}.tile .tile-body{padding:13px}.tile h3{margin:0 0 5px;font-size:16px}.tile p{margin:0;color:var(--muted);font-size:13px}.faculty-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.faculty-card{text-align:center;padding:20px 12px}.avatar{width:85px;height:85px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#d8eaff,#8fc2ed);font-size:34px}.faculty-card h3{margin:5px 0}.faculty-card p{margin:0;color:var(--muted);font-size:13px}
+.admission{background:linear-gradient(135deg,#073b78,#0969b7);color:white;border-radius:18px;padding:28px}.admission h2{color:white}.admission p{color:#e1edff}.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #ccd7e6;font:inherit;color:var(--ink)}.admission .btn{margin-top:16px}.note{font-size:12px;color:#dceaff}
+.about-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:20px}.contact-list{display:grid;gap:12px}.contact-item{display:flex;gap:12px;align-items:flex-start}.contact-item span{font-size:22px}.contact-item a{color:var(--blue);overflow-wrap:anywhere}.mapbox{min-height:220px;border-radius:12px;background:linear-gradient(135deg,#e2f0e6,#d7e8f8);display:grid;place-items:center;text-align:center;padding:20px}
+footer{background:#052f61;color:white;padding:25px 20px}.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}
+.modal{position:fixed;inset:0;background:#06172dcc;display:none;align-items:center;justify-content:center;padding:18px;z-index:30}.modal.show{display:flex}.modal-box{background:white;border-radius:16px;width:min(520px,100%);padding:25px;max-height:90vh;overflow:auto}.modal-box h2{margin-top:0;color:var(--navy)}.modal-box .field{margin:12px 0}.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.btn.secondary{background:#e8eef7}.admin{display:none}.admin.show{display:block}.admin-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.admin .field{margin:12px 0}.admin hr{border:0;border-top:1px solid #dce4ef;margin:22px 0}.small-btn{border:0;border-radius:8px;padding:8px 11px;background:#eaf2fc;color:var(--navy);font-weight:700;cursor:pointer}.empty{color:var(--muted);padding:22px;text-align:center;border:1px dashed #b8c8dd;border-radius:12px}
+@media(max-width:980px){.navlinks{display:none;position:absolute;top:79px;left:0;right:0;background:var(--navy);padding:18px 22px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-toggle{display:block}.nav .apply{display:none}.quicklinks{grid-template-columns:repeat(3,1fr)}.faculty-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.brand{min-width:0}.brand strong{font-size:15px}.brand small{font-size:11px}.logo{width:45px;height:45px;font-size:22px}.hero{min-height:360px}.hero-inner{padding:40px 22px}.quicklinks{grid-template-columns:repeat(2,1fr);margin-top:-15px}.grid-2,.about-grid{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}.form-grid{grid-template-columns:1fr}.section h2{font-size:24px}.panel,.card{padding:17px}}
+@media(max-width:390px){.tiles{grid-template-columns:1fr}.faculty-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home" style="text-decoration:none"><span class="logo">🎓</span><span><strong>MUNNANGI HIGH SCHOOL</strong><small>Knowledge · Discipline · Bright Future</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navlinks">
+      <a href="#home">Home</a><a href="#activity">Activity</a><a href="#vision">Vision & Mission</a><a href="#admissions">Admissions</a><a href="#faculty">Faculty</a><a href="#highlights">Highlights</a><a href="#develop">Develop</a><a href="#about">About Us</a>
+    </div>
+    <a class="apply" href="#admissions">✈ Apply Now</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">Welcome to</div>
+    <h1>MUNNANGI HIGH SCHOOL</h1>
+    <h2 style="margin:0;font-size:clamp(18px,2.5vw,25px)">Building Bright Minds for a Better Tomorrow</h2>
+    <p>We provide quality education, strong values and a caring environment to help every student learn, grow and achieve their dreams.</p>
+    <div class="hero-actions"><a class="btn" href="#about">🎓 Learn More</a><a class="btn outline" href="#admissions">Apply for Admission</a></div>
+  </div>
+</section>
+
+<div class="quicklinks">
+  <a class="quick" href="#activity"><span class="emoji">🏃</span><b>Activity</b><small>School events & activities</small></a>
+  <a class="quick" href="#vision"><span class="emoji">🎯</span><b>Vision & Mission</b><small>Our goals and values</small></a>
+  <a class="quick" href="#admissions"><span class="emoji">🎓</span><b>Admissions</b><small>Join our school</small></a>
+  <a class="quick" href="#faculty"><span class="emoji">👩‍🏫</span><b>Faculty</b><small>Our dedicated teachers</small></a>
+  <a class="quick" href="#highlights"><span class="emoji">🌟</span><b>Highlights</b><small>Achievements & gallery</small></a>
+  <a class="quick" href="#develop"><span class="emoji">🛠️</span><b>Develop</b><small>Admin dashboard</small></a>
+</div>
+
+<main>
+  <section class="section" id="activity">
+    <div class="section-heading"><div><h2>🏃 School Activities</h2><p>Learning, teamwork and experiences beyond the classroom.</p></div></div>
+    <div class="tiles" id="activityGallery"><div class="tile"><div style="height:130px;display:grid;place-items:center;background:#e8f2ff;font-size:45px">🏅</div><div class="tile-body"><h3>Annual Day</h3><p>Celebrating student talent and achievement.</p></div></div><div class="tile"><div style="height:130px;display:grid;place-items:center;background:#eaf9ef;font-size:45px">⚽</div><div class="tile-body"><h3>Sports & Games</h3><p>Building teamwork, confidence and fitness.</p></div></div><div class="tile"><div style="height:130px;display:grid;place-items:center;background:#fff2df;font-size:45px">🔬</div><div class="tile-body"><h3>Science & Learning</h3><p>Encouraging curiosity and discovery.</p></div></div></div>
+  </section>
+
+  <section class="section" id="vision">
+    <div class="section-heading"><div><h2>🎯 Vision and Mission</h2><p>The values that guide our school community.</p></div></div>
+    <div class="grid-2">
+      <div class="panel"><h3>👁️ Our Vision</h3><div class="vision-box">To create a positive learning environment that empowers every student to become a responsible, confident and successful individual.</div></div>
+      <div class="panel"><h3>🌱 Our Mission</h3><div class="mission-box"><ul><li>Provide quality education for every learner.</li><li>Develop strong moral values and discipline.</li><li>Encourage creativity, curiosity and innovation.</li><li>Support students to build a brighter future.</li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="admissions">
+    <div class="admission">
+      <h2>📝 Admissions Open</h2>
+      <p>Interested in joining Munnangi High School? Complete this enquiry form and send the details to the school through WhatsApp.</p>
+      <form id="admissionForm">
+        <div class="form-grid">
+          <div class="field"><label for="studentName">Student Name *</label><input id="studentName" name="studentName" required placeholder="Enter student name"></div>
+          <div class="field"><label for="studentClass">Class Applying For *</label><select id="studentClass" name="studentClass" required><option value="">Select class</option><option>Nursery</option><option>LKG</option><option>UKG</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option></select></div>
+          <div class="field"><label for="studentPhone">Contact Number *</label><input id="studentPhone" name="studentPhone" type="tel" required pattern="[0-9+\-\s]{10,15}" placeholder="Enter contact number"></div>
+        </div>
+        <button class="btn" type="submit">📲 Send Admission Enquiry on WhatsApp</button>
+        <p class="note">WhatsApp will open with your message ready to send. Please review and tap Send in WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="faculty">
+    <div class="section-heading"><div><h2>👩‍🏫 Our Faculty</h2><p>Dedicated educators supporting every student's journey.</p></div></div>
+    <div class="faculty-grid" id="facultyGallery">
+      <div class="card faculty-card"><div class="avatar">👩‍🏫</div><h3>Teaching Faculty</h3><p>Guiding students with care and knowledge.</p></div>
+      <div class="card faculty-card"><div class="avatar">👨‍🏫</div><h3>Subject Teachers</h3><p>Making learning engaging and meaningful.</p></div>
+      <div class="card faculty-card"><div class="avatar">📚</div><h3>Academic Support</h3><p>Helping students build strong foundations.</p></div>
+      <div class="card faculty-card"><div class="avatar">🤝</div><h3>Student Guidance</h3><p>Encouraging confidence and good values.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="highlights">
+    <div class="section-heading"><div><h2>🌟 Latest Highlights</h2><p>School memories, events and achievements.</p></div></div>
+    <div class="tiles" id="highlightsGallery"><div class="tile"><div style="height:130px;display:grid;place-items:center;background:#e8f2ff;font-size:45px">🎉</div><div class="tile-body"><h3>School Celebrations</h3><p>Special moments from our school community.</p></div></div><div class="tile"><div style="height:130px;display:grid;place-items:center;background:#eaf9ef;font-size:45px">🏆</div><div class="tile-body"><h3>Student Achievements</h3><p>Recognising effort, progress and success.</p></div></div><div class="tile"><div style="height:130px;display:grid;place-items:center;background:#fff2df;font-size:45px">🧪</div><div class="tile-body"><h3>Learning in Action</h3><p>Exploring new ideas inside and outside class.</p></div></div></div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-heading"><div><h2>🏫 About Munnangi High School</h2><p>Knowledge · Discipline · Bright Future</p></div></div>
+    <div class="about-grid">
+      <div class="panel"><p>Munnangi High School is committed to providing quality education and supporting students' academic, personal and social development in a caring, student-friendly environment.</p>
+        <div class="contact-list">
+          <div class="contact-item"><span>📞</span><div><b>Call Us</b><br><a href="tel:9701219324">97012 19324</a></div></div>
+          <div class="contact-item"><span>✉️</span><div><b>Email Us</b><br><a href="mailto:munnangihighschool@gmail.com">munnangihighschool@gmail.com</a></div></div>
+          <div class="contact-item"><span>📍</span><div><b>Location</b><br><a href="https://maps.app.goo.gl/GGoBZ7Kihcp5UK3RA" target="_blank" rel="noopener">Open school location in Google Maps</a></div></div>
+        </div>
+      </div>
+      <div class="mapbox"><div><div style="font-size:50px">📍</div><h3>Munnangi High School</h3><a class="btn" href="https://maps.app.goo.gl/GGoBZ7Kihcp5UK3RA" target="_blank" rel="noopener">View on Google Maps</a></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="develop">
+    <div class="section-heading"><div><h2>🛠️ Develop Website</h2><p>Administrator access for managing galleries and captions.</p></div></div>
+    <div class="panel" id="loginPanel"><h3>🔐 Admin Login</h3><p>Sign in to manage highlights, faculty and media galleries.</p><button class="btn" id="openLogin">Login to Develop</button><p style="font-size:12px;color:#69778c">Note: this single-file demo is for preview/local use. For a live website, secure admin authentication and online file storage must be configured on a server.</p></div>
+    <div class="panel admin" id="adminPanel">
+      <h3>Admin Dashboard</h3><p>Choose a gallery, add a title and upload photos, videos or PDF files. Changes are stored in this browser on this device.</p>
+      <div class="admin-toolbar"><button class="small-btn" data-gallery="highlights">Highlights Gallery</button><button class="small-btn" data-gallery="faculty">Faculty Gallery</button><button class="small-btn" data-gallery="activity">Activity Gallery</button><button class="small-btn" id="logout">Log Out</button></div>
+      <hr>
+      <form id="uploadForm">
+        <div class="field"><label for="galleryType">Gallery</label><select id="galleryType"><option value="highlights">Highlights</option><option value="faculty">Faculty</option><option value="activity">Activity</option></select></div>
+        <div class="field"><label for="itemTitle">Title / Highlight Name</label><input id="itemTitle" required placeholder="e.g. Annual Day Celebration"></div>
+        <div class="field"><label for="itemDescription">Description (optional)</label><textarea id="itemDescription" rows="2" placeholder="Write a short description"></textarea></div>
+        <div class="field"><label for="mediaFile">Upload photo, video or PDF</label><input id="mediaFile" type="file" accept="image/*,video/*,application/pdf" required><small style="color:#68768b">For this demo, each file is limited to 4 MB so it can fit in browser storage.</small></div>
+        <button class="btn" type="submit">＋ Add to Gallery</button>
+      </form>
+      <hr><h3>Manage Uploaded Items</h3><div id="manageList"></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="footer-inner"><span>© <span id="year"></span> Munnangi High School. All Rights Reserved.</span><span>Education · Values · Success</span><span>🌱 Together We Grow</span></div></footer>
+
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+  <div class="modal-box"><h2 id="loginTitle">Admin Login</h2><p>Enter administrator credentials to open the dashboard.</p>
+    <form id="loginForm"><div class="field"><label for="loginId">Login ID</label><input id="loginId" autocomplete="username" required></div><div class="field"><label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password" required></div><div id="loginError" style="color:#b42318;font-size:13px" aria-live="polite"></div><div class="modal-actions"><button class="btn" type="submit">Login</button><button class="btn secondary" type="button" id="closeLogin">Cancel</button></div></form>
+  </div>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const menuToggle = $('#menuToggle'), navlinks = $('#navlinks');
+menuToggle.addEventListener('click',()=>navlinks.classList.toggle('open'));
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
+$('#year').textContent = new Date().getFullYear();
+
+// Admission enquiry: opens WhatsApp with the entered details.
+$('#admissionForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#studentName').value.trim();
+  const studentClass = $('#studentClass').value;
+  const phone = $('#studentPhone').value.trim();
+  const message = `Munnangi High School - Admission Enquiry%0AStudent Name: ${encodeURIComponent(name)}%0AClass Applying For: ${encodeURIComponent(studentClass)}%0AContact Number: ${encodeURIComponent(phone)}`;
+  window.open(`https://wa.me/919701219324?text=${message}`, '_blank', 'noopener');
+});
+
+// Demo-only credentials. Client-side credentials are visible to anyone inspecting source.
+// Replace with real server-side authentication before publishing publicly.
+const DEMO_ID = 'MHS123';
+const DEMO_PASSWORD = 'mhs123';
+const STORAGE_KEY = 'munnangiSchoolGalleryV1';
+let currentGallery = 'highlights';
+let items = [];
+try { items = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch (_) { items = []; }
+
+const modal = $('#loginModal');
+$('#openLogin').addEventListener('click',()=>{modal.classList.add('show');$('#loginId').focus();});
+$('#closeLogin').addEventListener('click',()=>modal.classList.remove('show'));
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show');});
+$('#loginForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  if($('#loginId').value === DEMO_ID && $('#loginPassword').value === DEMO_PASSWORD){
+    modal.classList.remove('show');$('#loginPanel').style.display='none';$('#adminPanel').classList.add('show');$('#loginError').textContent='';renderManageList();
+  } else { $('#loginError').textContent='Login details are incorrect. Please try again.'; }
+});
+$('#logout').addEventListener('click',()=>{$('#adminPanel').classList.remove('show');$('#loginPanel').style.display='block';$('#loginForm').reset();});
+document.querySelectorAll('[data-gallery]').forEach(b=>b.addEventListener('click',()=>{$('#galleryType').value=b.dataset.gallery;currentGallery=b.dataset.gallery;renderManageList();}));
+$('#galleryType').addEventListener('change',()=>{currentGallery=$('#galleryType').value;renderManageList();});
+
+function escapeHTML(str){return String(str).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function saveItems(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); return true; }
+  catch(err){ alert('Browser storage is full. Remove some uploaded files and try again.'); return false; }
+}
+function renderGallery(type){
+  const target = document.getElementById(type+'Gallery');
+  const matching = items.filter(x=>x.gallery===type);
+  if(!matching.length) return;
+  matching.forEach(item=>{
+    const tile=document.createElement('article');tile.className='tile';
+    let media='';
+    if(item.kind==='image') media=`<img src="${item.data}" alt="${escapeHTML(item.title)}">`;
+    else if(item.kind==='video') media=`<video src="${item.data}" controls preload="metadata"></video>`;
+    else media=`<div style="padding:22px;text-align:center;background:#eef4fb;font-size:42px">📄<br><a href="${item.data}" target="_blank" rel="noopener" style="font-size:13px">Open PDF</a></div>`;
+    tile.innerHTML=`${media}<div class="tile-body"><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.description||'')}</p></div>`;
+    target.appendChild(tile);
+  });
+}
+function renderAllGalleries(){
+  ['highlights','faculty','activity'].forEach(type=>{
+    const target=document.getElementById(type+'Gallery');
+    // Keep the built-in examples when there are no admin uploads in this category.
+    target.querySelectorAll('[data-admin-item="true"]').forEach(el=>el.remove());
+    items.filter(x=>x.gallery===type).forEach(item=>{
+      const tile=document.createElement('article');tile.className='tile';tile.dataset.adminItem='true';
+      let media=item.kind==='image'?`<img src="${item.data}" alt="${escapeHTML(item.title)}">`:item.kind==='video'?`<video src="${item.data}" controls preload="metadata"></video>`:`<div style="padding:22px;text-align:center;background:#eef4fb;font-size:42px">📄<br><a href="${item.data}" target="_blank" rel="noopener" style="font-size:13px">Open PDF</a></div>`;
+      tile.innerHTML=`${media}<div class="tile-body"><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.description||'')}</p></div>`;
+      target.appendChild(tile);
+    });
+  });
+}
+function renderManageList(){
+  const list=$('#manageList');
+  const matching=items.filter(x=>x.gallery===currentGallery);
+  if(!matching.length){list.innerHTML='<div class="empty">No admin uploads in this gallery yet.</div>';return;}
+  list.innerHTML='';
+  matching.forEach(item=>{
+    const row=document.createElement('div');row.className='card';row.style.margin='10px 0';row.style.padding='13px';
+    row.innerHTML=`<b>${escapeHTML(item.title)}</b><p style="margin:3px 0;color:#65738a;font-size:13px">${escapeHTML(item.gallery)} · ${escapeHTML(item.kind)}</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><button class="small-btn" data-rename="${item.id}">Edit Name</button><button class="small-btn" data-delete="${item.id}">Delete</button></div>`;
+    list.appendChild(row);
+  });
+  list.querySelectorAll('[data-rename]').forEach(btn=>btn.addEventListener('click',()=>{
+    const item=items.find(x=>x.id===btn.dataset.rename);if(!item)return;
+    const name=prompt('Enter the new title / highlight name:',item.title);
+    if(name&&name.trim()){item.title=name.trim();if(saveItems()){renderManageList();renderAllGalleries();}}
+  }));
+  list.querySelectorAll('[data-delete]').forEach(btn=>btn.addEventListener('click',()=>{
+    if(confirm('Delete this uploaded item?')){items=items.filter(x=>x.id!==btn.dataset.delete);if(saveItems()){renderManageList();renderAllGalleries();}}
+  }));
+}
+$('#uploadForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const file=$('#mediaFile').files[0];if(!file)return;
+  if(file.size>4*1024*1024){alert('Please choose a file smaller than 4 MB.');return;}
+  const isImage=file.type.startsWith('image/'), isVideo=file.type.startsWith('video/'), isPDF=file.type==='application/pdf';
+  if(!isImage&&!isVideo&&!isPDF){alert('Please upload an image, video or PDF file.');return;}
+  const reader=new FileReader();
+  reader.onload=()=>{
+    const item={id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),gallery:$('#galleryType').value,title:$('#itemTitle').value.trim(),description:$('#itemDescription').value.trim(),kind:isImage?'image':isVideo?'video':'pdf',data:reader.result};
+    items.push(item);
+    if(saveItems()){currentGallery=item.gallery;renderManageList();renderAllGalleries();$('#uploadForm').reset();alert('Item added to the gallery on this device.');}
+    else items=items.filter(x=>x.id!==item.id);
+  };
+  reader.onerror=()=>alert('Could not read this file. Please try again.');
+  reader.readAsDataURL(file);
+});
+renderAllGalleries();
+</script>
+</body>
+</html>
